@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{4e0d2078-0e47-49f0-92bb-f59bae913890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem">
+      <UniqueIdentifier>{6b7bb406-8525-4c35-8191-7d5fada29c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{85b020a7-a456-400b-8080-bfdb2ef0fb1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{7e6f3e40-d5a1-4deb-89f0-b87c1b1c6cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{f029c2bc-7ddc-4ae8-b62e-2ada01432252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{8407bda8-bb17-40d5-b2c8-0fb038c9565e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem\ConfigSystem">
+      <UniqueIdentifier>{bc7eb7b6-efef-4848-86d0-b793850e0cab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem\LogSystem">
+      <UniqueIdentifier>{1346d4f4-2f0f-43d1-9f63-6d25c9ea07a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Effect">
+      <UniqueIdentifier>{01d708fe-a63c-480a-90ac-e54d82e77da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\InputCallback">
+      <UniqueIdentifier>{e906a11c-c894-4aa1-94d8-fbabd015e12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Buffer">
+      <UniqueIdentifier>{28b7fbc7-501a-4bd5-8dee-fcaaae6f68b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture">
+      <UniqueIdentifier>{2913b47f-4602-4476-b867-7fc22c6179fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Camera">
+      <UniqueIdentifier>{76197e77-c117-455d-b72c-a09744ca3918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Model">
+      <UniqueIdentifier>{75b11e66-dfe1-424e-a4ef-013ff2bf977f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseProduct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsInterface.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsMicro.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsExport.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductFactory.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductFactoryData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsConfig.h">
+      <Filter>FileSystem\ConfigSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlParser.h">
+      <Filter>FileSystem\ConfigSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EventLogger.h">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputTarget.h">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputToFile.h">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputToScreen.h">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TweakBar.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Scene\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="FBO.h">
+      <Filter>Resource\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="FBOManager.h">
+      <Filter>Resource\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Resource\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Resource\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinnedMesh.h">
+      <Filter>Resource\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Render\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
+      <Filter>Render\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Render\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ICallBack.h">
+      <Filter>Render\InputCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTransformer.h">
+      <Filter>Render\InputCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayWindow.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceExplorer.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GraphicsInterface.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductFactoryData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsConfig.cpp">
+      <Filter>FileSystem\ConfigSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlParser.cpp">
+      <Filter>FileSystem\ConfigSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EventLogger.cpp">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputTarget.cpp">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputToFile.cpp">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputToScreen.cpp">
+      <Filter>FileSystem\LogSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="TweakBar.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Scene\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="FBO.cpp">
+      <Filter>Resource\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="FBOManager.cpp">
+      <Filter>Resource\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Resource\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Resource\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinnedMesh.cpp">
+      <Filter>Resource\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Render\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>Render\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Render\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ICallBack.cpp">
+      <Filter>Render\InputCallback</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTransformer.cpp">
+      <Filter>Render\InputCallback</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayWindow.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceExplorer.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

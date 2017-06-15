@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EFFECT type="subconfig" name="INPUT_EFFECT">
+  <SHADER type="subconfig" name="INPUT_SHADER">
+    <VERTEX_SHADER type="vecstring">shaders/0vertPlain.glsl</VERTEX_SHADER>
+    <FRAGMENT_SHADER type="vecstring">shaders/0fragPlain.glsl</FRAGMENT_SHADER>
+  </SHADER>
+</EFFECT>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TEXTURE type="subconfig" name="AWESOME_TEXTURE">
+  <TEXTURE_PATH type="string"> ../../Resources/Texture/awesomeface.png </TEXTURE_PATH>
+  <TEXTURE_WRAP type="vecstring"> GL_REPEAT GL_REPEAT </TEXTURE_WRAP>
+  <TEXTURE_FILTER type="vecstring"> GL_LINEAR GL_LINEAR </TEXTURE_FILTER>
+</TEXTURE>

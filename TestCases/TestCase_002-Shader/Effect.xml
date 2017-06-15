@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EFFECT type="subconfig" name="SHADER_EFFECT">
+  <EFFECT_STATE type="string"> ON </EFFECT_STATE>
+  
+  <SHADER type="subconfig" name="TRIANGLE_SHADER">
+    <VERTEX_SHADER type="vecstring">shaders/0vertShader.glsl</VERTEX_SHADER>
+    <FRAGMENT_SHADER type="vecstring">shaders/0fragShader.glsl</FRAGMENT_SHADER>
+  </SHADER>
+</EFFECT>

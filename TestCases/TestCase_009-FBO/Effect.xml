@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EFFECT type="subconfig" name="FBO_EFFECT">
+  <SHADER1 type="subconfig" name="GEOMETRY_SHADER">
+    <VERTEX_SHADER type="vecstring">shaders/geometryV.glsl</VERTEX_SHADER>
+    <FRAGMENT_SHADER type="vecstring">shaders/geometryF.glsl</FRAGMENT_SHADER>
+  </SHADER1>
+
+  <SHADER2 type="subconfig" name="COPYTEX_SHADER">
+    <VERTEX_SHADER type="vecstring">shaders/drawScreenQuadV.glsl</VERTEX_SHADER>
+    <FRAGMENT_SHADER type="vecstring">shaders/showTextureF.glsl</FRAGMENT_SHADER>
+  </SHADER2>
+</EFFECT>
