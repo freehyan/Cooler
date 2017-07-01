@@ -12,6 +12,7 @@
 #include "TweakBar.h"
 #include "FBO.h"
 #include "FBOManager.h"
+#include "DisplayWindow.h"
 
 using namespace Cooler;
 
@@ -77,6 +78,11 @@ void Cooler::outputWarning(const std::string& vSource, const std::string& vFile,
 	CEventLogger::getInstance()->outputWarning(vSource, vFile, vLine, vDescription);
 }
 
+void Cooler::outputGraphicsError(const std::string& vFileName, unsigned int vLine, const std::string& vError)
+{
+	//TODO:
+}
+
 //***********************************************************
 //FUNCTION:
 glm::mat4 Cooler::fectchCameraViewMatrix(const std::string& vCameraName)
@@ -103,6 +109,16 @@ void Cooler::graphicsRenderModel(const std::string& vModelName)
 	CModel* pModel = dynamic_cast<CModel*>(pModelManager->fetchResource(vModelName));
 	_ASSERTE(pModel);
 	pModel->render();
+}
+
+//***********************************************************
+//FUNCTION::
+std::pair<int, int> Cooler::getDisplayWindowsSize()
+{
+	int Width = IRender::getInstance()->fetchDisplayWindow()->getWindowWidth();
+	int Height = IRender::getInstance()->fetchDisplayWindow()->getWindowHeight();
+	_ASSERTE(Width > 0 && Height > 0);
+	return std::make_pair(Width, Height);
 }
 
 //***********************************************************

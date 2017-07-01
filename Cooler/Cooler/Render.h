@@ -47,11 +47,12 @@ namespace Cooler
 
 	private:
 		double m_DeltaTime, m_LastTime;
-		CDisplayWindow* m_pDisplayWindow;
-		CInputTransformer* m_pInputTransformer;
-		CAntTweakBar* m_pAntTweakBar;
 
-		std::map<std::string, CEffect*> m_EffectMap;
+		CDisplayWindow*    m_pDisplayWindow;
+		CAntTweakBar*      m_pAntTweakBar;
+		CInputTransformer* m_pInputTransformer;
+
+		std::map<std::string, CEffect*>         m_EffectMap;
 		std::map<std::string, CGraphicsConfig*> m_ConfigSet;
 
 	friend class CSingleton<IRender>;

@@ -32,6 +32,8 @@ namespace Cooler
 	COOLER_COMMON_DLL_EXPORT glm::mat4 fectchCameraViewMatrix(const std::string& vCameraName);
 	COOLER_COMMON_DLL_EXPORT glm::mat4 fetchCameraProjectionMatrix(const std::string& vCameraName);
 	COOLER_COMMON_DLL_EXPORT void graphicsRenderModel(const std::string& vModelName);
+	COOLER_COMMON_DLL_EXPORT std::pair<int, int> getDisplayWindowsSize();
+
 
 	CTexture* graphicsFindTexture(const std::string& vTexName);
 	CCamera* graphicsFindCamera(const std::string& vCameraName);
