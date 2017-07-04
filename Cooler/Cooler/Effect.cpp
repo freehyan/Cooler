@@ -198,6 +198,15 @@ void Cooler::CEffect::_updateShaderUniformfv(const std::string& vUniformName, un
 
 //***********************************************************
 //FUNCTION::
+unsigned int Cooler::CEffect::_getShaderId(const std::string& vShaderName)
+{
+ 	if (m_ShaderMap.find(vShaderName) == m_ShaderMap.end()) return 0;
+ 	m_pCurrentShader = m_ShaderMap[vShaderName];
+ 	return m_pCurrentShader->getShaderProgram();
+}
+
+//***********************************************************
+//FUNCTION::
 bool Cooler::CEffect::__initEffectShader(const CGraphicsConfig* vShaderConfig)
 {
 	if (!vShaderConfig) return false;

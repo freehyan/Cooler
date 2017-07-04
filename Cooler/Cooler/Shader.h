@@ -27,6 +27,7 @@ namespace Cooler
 		bool compileShader();
 		void enable();
 		void disable();
+		inline GLuint getShaderProgram() const { return m_ShaderProgram; }
 
 	private:
 		bool __readShaderFile(const std::string& vShaderFileName, std::string& voShaderData);

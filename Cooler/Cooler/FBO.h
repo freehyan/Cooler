@@ -21,7 +21,8 @@ namespace Cooler
 		void closeFBO() const;
 
 		void bindFBOTex(GLenum vTextureUnit, const std::string& vTexName);
-		GLuint getFBOTexId(const std::string& vTexName) const;
+		//GLuint getFBOTexId(const std::string& vTexName) const;
+		inline GLuint getFBOId() const { return m_FBO; }
 		inline GLuint getFBODepth() const { return m_DepthTex; }
 
 	protected:

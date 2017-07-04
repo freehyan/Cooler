@@ -34,7 +34,7 @@ namespace Cooler
 
 	protected:
 		virtual void _renderEffectV() {}
-		virtual void _initEffectV() {}
+		virtual void _initEffectV()   {}
 		virtual void _destoryEffectV(){}
 
 		bool _enableShader(const std::string& vShaderName);
@@ -45,6 +45,8 @@ namespace Cooler
 
 		void _updateShaderUniform(const std::string& vUniformName, boost::any vValue);
 		void _updateShaderUniformfv(const std::string& vUniformName, unsigned int vCount, float* vVlaue);
+
+		unsigned int _getShaderId(const std::string& vShaderName);
 
 	private:
 		bool __initEffectShader(const CGraphicsConfig* vShaderConfig);

@@ -71,23 +71,23 @@ void Cooler::CFBO::closeFBO() const
 //FUNCTION:
 void Cooler::CFBO::bindFBOTex(GLenum vTextureUnit, const std::string& vTexName)
 {
-	glActiveTexture(vTextureUnit);
-	glEnable(GL_TEXTURE_2D);
-	GLuint TexId = getFBOTexId(vTexName);
-	_ASSERTE(TexId);
-	glBindTexture(GL_TEXTURE_2D, TexId);
+// 	glActiveTexture(vTextureUnit);
+// 	glEnable(GL_TEXTURE_2D);
+// 	GLuint TexId = getFBOTexId(vTexName);
+// 	_ASSERTE(TexId);
+// 	glBindTexture(GL_TEXTURE_2D, TexId);
 }
 
 //***********************************************************
 //FUNCTION:
-GLuint Cooler::CFBO::getFBOTexId(const std::string& vTexName) const
-{
-// 	auto Itr = m_TexBuffers.find(vTexName);
-// 	if (Itr != m_TexBuffers.end())
-// 		return Itr->second;
-// 	else
-		return 0;
-}
+// GLuint Cooler::CFBO::getFBOTexId(const std::string& vTexName) const
+// {
+// // 	auto Itr = m_TexBuffers.find(vTexName);
+// // 	if (Itr != m_TexBuffers.end())
+// // 		return Itr->second;
+// // 	else
+// 		return 0;
+// }
 
 //***********************************************************
 //FUNCTION:
