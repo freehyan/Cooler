@@ -43,8 +43,9 @@ bool Cooler::CTexture::loadImage(const std::string& vFile, GLint vFilterMin, GLi
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, vFilterMin);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, vFilterMax);
 	
-	int iWidth = 0, iHeight = 0;
-	unsigned char* pImage = SOIL_load_image(vFile.c_str(), &iWidth, &iHeight, 0, SOIL_LOAD_RGB);
+	int iWidth = 0, iHeight = 0, iChannels = 0;
+	//unsigned char* pImage = SOIL_load_image(vFile.c_str(), &iWidth, &iHeight, 0, SOIL_LOAD_RGB);
+	GLubyte *pImage = SOIL_load_image(vFile.c_str(), &iWidth, &iHeight, &iChannels, SOIL_LOAD_RGB);
 	_ASSERTE(pImage);
 
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
